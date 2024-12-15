@@ -1,0 +1,27 @@
+                                        Rapport TP WebSocket:
+Exercice 1 :
+
+    Objectif : Créer une application de chat en temps réel.
+    Back-end (WebSocket) :
+        Mise en place d’un endpoint WebSocket ChatEndpoint avec @ServerEndpoint("/chat").
+        Gestion des événements :
+            @OnOpen : Connexion établie.
+            @OnMessage : Réception et diffusion des messages, le premier message reçu est le nom d’utilisateur.
+            @OnClose : Annonce du départ de l’utilisateur.
+            @OnError : Gestion des erreurs.
+    Front-end (JSP + JS) :
+        login.jsp : Saisie du nom d’utilisateur.
+        chat.jsp : Interface de chat.
+            Connexion WebSocket via JavaScript.
+            Réception et affichage instantanés des messages.
+            Envoi de messages en temps réel.
+
+    On peut tester cet exercice en ouvrant 2 onglets du chat dans le navigateur
+    et intéragir entre les 2.
+
+Exercice 2 (Bonus) :
+
+    Test avec un partage de connexion entre 2 machines et un téléphone portable : succès
+    Les appareils non hôte doivent récupérer l'adresse Ip de la machine hôte et modifier le lien.
+
+
